@@ -10,11 +10,11 @@ import (
 )
 
 const (
-	Ldate = 1 << iota
+	Ldate = 1 << iota // 递增模式是 1<< n(0,1,2,...,位操作)
 	Ltime
 	Lmicroseconds
-	Llongfile
-	Lshortfile
+	Llongfile // 绝对路径
+	Lshortfile // 当前文件名称ß
 	LUTC //时区
 	LstdFlags = Ldate | Ltime
 )
@@ -225,7 +225,6 @@ func SetPrefix(prefix string) {
 	std.SetPrefix(prefix)
 }
 
-/*------------------------------------------------*/
 func Print(v ...interface{}) {
 	std.Output(2, fmt.Sprint(v...))
 }
