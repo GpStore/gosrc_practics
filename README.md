@@ -1,2 +1,3 @@
 # gosrc_practics
 notes or rewrite golang src like log/time/fmt/builtin/io/sync...
+2018/11/8 log/log.go log_test.go example_test.go
